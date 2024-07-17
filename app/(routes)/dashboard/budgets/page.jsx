@@ -1,5 +1,5 @@
 import React from 'react'
-import BudgetList from './_components/BudgetList'
+import BudgetList from './_components/BudgetList';
 function Budgets() {
   return (
     <div className='p-10'>
