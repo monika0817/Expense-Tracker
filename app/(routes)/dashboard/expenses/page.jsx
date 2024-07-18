@@ -1,5 +1,5 @@
 "use client"
-import {  UserButton,useUser } from '@clerk/nextjs'
+import {  useUser } from '@clerk/nextjs'
 import React, { useEffect, useState } from 'react'
 
 
@@ -7,8 +7,7 @@ import { Budgets, Expenses } from '@/utils/schema';
 import { db } from '@/utils/dbConfig';
 import { desc, eq, getTableColumns, sql } from 'drizzle-orm';
 import ExpenseListTable from './[id]/_components/ExpenseListTable';
-import CardInfo from '../_components/CardInfo';
-import BarChartDashboard from '../_components/BarChartDashboard';
+
 
 
 function expenses() {

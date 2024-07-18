@@ -7,6 +7,7 @@ import { Budgets } from "@/utils/schema"
 import { useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
 import { eq } from 'drizzle-orm'
+import { ResponsiveContainer } from 'recharts'
 
 function DashboardLayout({children}) {
 
@@ -32,7 +33,9 @@ function DashboardLayout({children}) {
   return (
     <div>
         <div className='fixed md:w-64 hidden md:block'>
+        <ResponsiveContainer width={'100%'} height={300}>
             <SideNav/>
+        </ResponsiveContainer>    
         </div>
         <div className='md:ml-64'>
             <DashboardHeader/>
